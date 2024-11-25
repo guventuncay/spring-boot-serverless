@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
-Description: AWS Serverless Spring Boot 2 API - dev.guvenx::spring-boot-serverless
+Description: AWS Serverless Spring Boot 3 API - dev.guvenx::spring-boot-serverless
 Globals:
   Api:
     EndpointConfiguration: REGIONAL

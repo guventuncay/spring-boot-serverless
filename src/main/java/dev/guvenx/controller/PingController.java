@@ -11,7 +11,7 @@ import java.util.Map;
 @RestController
 @EnableWebMvc
 public class PingController {
-    @RequestMapping(path = "/ping", method = RequestMethod.GET)
+    @RequestMapping(path = "/hi", method = RequestMethod.GET)
     public Map<String, String> ping() {
         Map<String, String> pong = new HashMap<>();
         pong.put("pong", "Hello, World!");
