@@ -9,9 +9,11 @@ Resources:
   SpringBootServerlessFunction:
     Type: AWS::Serverless::Function
     Properties:
+      SnapStart:
+        ApplyOn: PublishedVersions
       Handler: dev.guvenx.StreamLambdaHandler::handleRequest
       Runtime: java21
-      CodeUri: .
+      CodeUri: target/spring-boot-serverless-1.0-SNAPSHOT-aws.jar
       MemorySize: 512
       Policies: AWSLambdaBasicExecutionRole
       Timeout: 30
